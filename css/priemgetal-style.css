@@ -1,0 +1,35 @@
+body {
+      background-color: black;
+      color: white;
+    }
+      .content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        font-size: 100px;
+        background-color: black;
+        color: white;
+      }
+      
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+       margin: 0;
+      }
+      
+      #input:focus {
+        outline: none;
+      }
+      
+      button {
+        position: absolute;
+        top: 100%;
+      }

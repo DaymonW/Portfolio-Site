@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portfolio [Vaardigheden]</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="font/css/fontello.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="index.html"><img src="img/user.jpg" width="64 px" height="64 px" alt=""></a>
+      <ul class="nav nav-collapse pull-right">
+        <li><a href="index.html"><i class="icon-user"></i> Profiel</a></li>
+        <li><a href="skills.html" class="active"><i class="icon-trophy"></i> Vaardigheden</a></li>
+      </ul>
+      <div class="nav-collapse collapse"></div>
+    </div>
+  </div>
+</div>
+<div class="container skills">
+  <h2>Mijn Vaardigheden</h2>
+  <div class="row">
+    <div class="span3">
+      <div class="ps">
+        <img src="img/psicon.png">
+      </div>
+    </div>
+    <div class="span5">
+      <h3>Photoshop</h3>
+      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3">
+      <div class="ai">
+        <img src="img/Unity_Logo.png" width="227" height="227" style="margin-right: 25%;">
+      </div>
+    </div>
+    <div class="span5">
+      <h3>Unity</h3>
+      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3">
+      <div class="html">
+        <img src="img/Visual-Studio-Logo.png" style="margin-top: 15%;">
+      </div>
+    </div>
+    <div class="span5">
+      <h3>Visual Studio <span>90%</span></h3>
+      <div class="expand-bg"> <span class="expand html2"> &nbsp; </span> </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3">
+      <div class="css">
+        <img src="img/Adobe-Premiere-Pro-Logo.png">
+      </div>
+    </div>
+    <div class="span5">
+      <h3>Premiere Pro <span>60%</span></h3>
+      <div class="expand-bg"> <span class="expand css2"> &nbsp; </span> </div>
+    </div>
+  </div>
+   <div class="row">
+    <div class="span3">
+      <a href="work.html">
+      <div class="js">
+        <img src="img/Javascript_Logo.png">
+      </div>
+      </a>
+    </div>
+    <div class="span5">
+      <h3>JavaScript<span>50%</span></h3>
+      <div class="expand-bg"> <span class="expand js2"> &nbsp; </span> </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3">
+      <a href="gameopdrachten.html">
+      <div class="game">
+        <img src="img/P5.js_icon.svg.png">
+      </div>
+      </a>
+    </div>
+    <div class="span5">
+      <h3>Game Opdrachten</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3">
+      <a href="https://iriscvo-my.sharepoint.com/:v:/g/personal/daymon_walter_hvc_nl/Ea1MYjoLee5Mi1y86J6ni0cBnxG3ChtsEH4DM7hcQdnlZg?e=IhDofw">
+      <div class="database">
+        <img src="img/Database_icon.png">
+      </div>
+      </a>
+    </div>
+    <div class="span5">
+      <h3>Database Presentatie</h3>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel"><i class="icon-mail"></i> Contact Me</h3>
+  </div>
+  <div class="modal-body">
+    <form action="#">
+      <input type="text" placeholder="Your Name">
+      <input type="text" placeholder="Your Email">
+      <input type="text" placeholder="Website (Optional)">
+      <textarea rows="3" style="width:80%"></textarea>
+      <br>
+      <button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> SUBMIT</button>
+    </form>
+  </div>
+</div>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$('#myModal').modal('hidden')
+</script>
+</body>
+</html>

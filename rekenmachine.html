@@ -1,0 +1,113 @@
+<html>
+  
+<head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+  body {
+    background-color: #435058;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  h1 {
+    color: #DCF763;
+    margin-right: 3%;
+    text-align: center;
+  }
+  
+  
+  input {
+    margin-left: 42.5%;
+    margin-top 42.5%
+  }
+  
+  select {
+    margin-left: 42.5%;
+  }
+  
+  #rekenmachine {
+    margin-top: 17.5%;
+  }
+  
+  #resultaat{
+    color: #FFF;
+  }
+  
+  #resultaat {
+    margin-left: 42.5%;
+  }
+</style>
+  
+<script>
+  function Bereken() {
+    let g1 = document.getElementById("input1").value;
+    let g2 = document.getElementById("input2").value;
+    g1 = parseFloat(g1);
+    g2 = parseFloat(g2);
+    
+    if (document.getElementById('bewerking').value == "plus") {
+      resultaat = telOp(g1, g2);
+      document.getElementById("resultaat").innerHTML = resultaat;
+    }
+    
+    if (document.getElementById('bewerking').value == "min") {
+      resultaat = trekAf(g1, g2);
+      document.getElementById("resultaat").innerHTML = resultaat;
+    }
+    
+    if (document.getElementById('bewerking').value == "keer") {
+      resultaat = Vermenigvuldig(g1, g2);
+      document.getElementById("resultaat").innerHTML = resultaat;
+    }
+    
+    if (document.getElementById('bewerking').value == "deel") {
+      resultaat = Deel(g1, g2);
+      document.getElementById("resultaat").innerHTML = resultaat;
+    }
+    
+    function telOp(getal1, getal2) {
+      let resultaat = getal1 + getal2;
+      return resultaat;
+    }
+    
+    function trekAf(getal1, getal2) {
+      let resultaat = getal1 - getal2;
+      return resultaat;
+    }
+    
+    function Deel(getal1, getal2) {
+      let resultaat = getal1 / getal2;
+      return resultaat;
+    }
+    
+    function Vermenigvuldig(getal1, getal2) {
+      let resultaat = getal1 * getal2;
+      return resultaat;
+    }
+    
+  }
+</script>
+  
+</head>
+<body>
+<div id="rekenmachine">
+<h1>Rekenmachine</h1>
+<input id="input1" type="number" class="rekenmachine"><br>
+<input id="input2" type="number"><br>
+<select id="bewerking">
+  <option value="plus">+</option>
+  <option value="min">-</option>
+  <option value="keer">*</option>
+  <option value="deel">/</option>
+</select>
+
+<button onclick="Bereken()">Bereken</button>
+
+<div id="resultaat"></div>
+</div>
+
+</body>
+</html>

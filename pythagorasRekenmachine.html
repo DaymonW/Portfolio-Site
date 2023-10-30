@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Pythagoras Rekenmachine</title>
+    <script>
+    let antwoordKwadraat;
+    window.onload = function() {
+      var knop = document.getElementById("wortelKnop");
+      knop.style.display = "none";
+    };
+      function pythagoras()
+      {
+        let a = prompt("Voer hier a\u00B2 in");
+        let b = prompt("Voer hier b\u00B2 in");
+        if (a != null && b != null)
+        {
+          a = parseFloat(a);
+          b = parseFloat(b);
+          aKwadraat = Math.pow(a,2);
+          bKwadraat = Math.pow(b,2);
+          antwoordKwadraat = aKwadraat + bKwadraat;
+          alert(a + "\u00B2" + " + " + b + "\u00B2" + " = " + antwoordKwadraat + "\u00B2");
+          document.getElementById("antwoord").innerHTML = a + "\u00B2" + " + " + b + "\u00B2" + " = " + antwoordKwadraat + "\u00B2";
+          var knop = document.getElementById("wortelKnop");
+          if (knop.style.display === "none")
+          {
+            knop.style.display = "block";
+          }
+        }
+        
+      }
+      
+      function wortel()
+      {
+        document.getElementById("antwoordGeWortelt").innerHTML = Math.sqrt(antwoordKwadraat);
+      }
+      
+    </script>
+  </head>
+  
+  <body>
+    <h1>Pythagoras Rekenmachine</h1>
+    <p>Klik op de knop hieronder om uit te rekenen wat a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+    <button onclick="pythagoras()">Reken Uit</button>
+    <p id="antwoord"></p>
+    <button onclick="wortel()" id="wortelKnop">Wortel het antwoord</button>
+    <p id="antwoordGeWortelt"></p>
+  </body>
+</html>

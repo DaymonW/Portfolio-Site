@@ -1,0 +1,89 @@
+<html>
+  <head>
+    
+    <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+      div.content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        font-size: 100px;
+        background-color: black;
+        color: white;
+      }
+      
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+       margin: 0;
+      }
+      
+      #input:focus {
+        outline: none;
+      }
+      
+      button {
+        position: absolute;
+        left: 50%;
+        top: 200px;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <script>
+      function berekenen() {
+        let getal = document.getElementById("input").value;
+        getal = parseInt(getal);
+        let isPriemgetal = true;
+        
+        
+        
+        if (getal > 1)
+        {
+          for (let i = 2; i < getal; i++)
+          {
+            if (getal % i == 0)
+            {
+              isPriemgetal = false;
+              break;
+            }
+          }
+        }
+        
+        if (getal < 1000) {
+          
+         if (isPriemgetal) {
+          document.getElementById("antwoord").innerHTML = getal + " is een priemgetal!"
+          
+        } else {
+        document.getElementById("antwoord").innerHTML = getal + " is geen priemgetal!"
+          }
+          
+        } else {
+          document.getElementById("antwoord").innerHTML = "Het getal mag niet boven de duizend komen!"
+        }
+        
+        
+      }
+        
+      
+    </script>
+  </head>
+  <body>
+    <div class="content">
+      <input type="number" id="input" autofocus="autofocus" onfocus="this.select()"><br>
+      <button id="button" onclick="berekenen()">Berekenen</button>
+      <p id="antwoord"></p>
+    </div>
+  </body>
+</html>
