@@ -76,7 +76,7 @@ ul.social-icons li a:hover {
 	text-align:left;
 	padding:47px 0;
 }
-.skills .ps, .skills .ai, .skills .html, .skills .css, .skills .js, .game, .database{
+.skills .ps, .skills .ai, .skills .html, .skills .css, .skills .js, .game, .database, .betoog{
 	padding:25px;
 	width:100px;
 	height:100px;
@@ -116,6 +116,10 @@ ul.social-icons li a:hover {
 	background:#145365;
 }
 
+.skills .betoog {
+	background:#fda870;
+}
+
 .skills .ps:hover, .skills .ai:hover, .skills .html:hover, .skills .css:hover, .skills .js:hover {
 	border:8px solid #fff;
 }
@@ -125,7 +129,11 @@ ul.social-icons li a:hover {
 }
 
 .skills .database:hover {
-	border:8px solid rgb(255, 144, 4);
+	border:8px solid rgb(255, 84, 4);
+}
+
+.skills .betoog:hover {
+	border:8px solid rgb(255, 199, 130);
 }
 
 .skills .ps h3, .skills .ai h3, .skills .html h3, .skills .css h3 {
